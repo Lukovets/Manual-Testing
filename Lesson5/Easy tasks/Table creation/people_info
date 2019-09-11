@@ -1,0 +1,13 @@
+CREATE TABLE `sql`.`people_info` (
+  
+`ID` INT NOT NULL,
+  
+`Name` VARCHAR(50) NULL,
+  
+`Surname` VARCHAR(50) NULL,
+  
+`City_ID` INT NULL,
+  
+`IsOccupaied` BIT(1) NULL,
+  
+PRIMARY KEY (`ID`));
