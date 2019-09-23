@@ -1,0 +1,3 @@
+select sum(sql2.orders.Price)
+from sql2.orders
+where sql2.orders.Status like 'Complete' 
