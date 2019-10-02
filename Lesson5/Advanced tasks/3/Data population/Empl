@@ -1,0 +1,4 @@
+INSERT INTO `sql2`.`empl` (`e_id`, `name`, `salary`) VALUES ('1', 'Shevchenko', '1200');
+INSERT INTO `sql2`.`empl` (`e_id`, `name`, `salary`) VALUES ('2', 'Mkrtchyan', '900');
+INSERT INTO `sql2`.`empl` (`e_id`, `name`, `salary`) VALUES ('1', 'Homich', '1300');
+INSERT INTO `sql2`.`empl` (`e_id`, `name`, `salary`) VALUES ('2', 'Sokolova', '800');
