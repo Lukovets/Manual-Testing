@@ -1,0 +1,58 @@
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('1', '111', '1Q', '91');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('2', '222', '1W', '90');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('3', '333', '1E', '89');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('4', '444', '1R', '88');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('5', '555', '1T', '87');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('6', '666', '1Y', '86');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('7', '777', '1U', '85');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('8', '888', '1I', '84');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('9', '999', '1O', '83');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('10', '1011', '1P', '82');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('11', '1111', '1A', '81');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('12', '1222', '1S', '80');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('13', '1333', '1D', '79');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('14', '1444', '1F', '78');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('15', '1555', '1G', '77');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('16', '1666', '1H', '76');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('17', '1777', '1J', '75');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('18', '1888', '1K', '74');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('19', '1999', '1L', '73');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('20', '2000', '1Z', '72');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('21', '2100', '1X', '71');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('22', '2200', '1C', '70');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('23', '2300', '1V', '69');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('24', '2400', '1B', '68');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('25', '2500', '1N', '67');
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('26', '2600', '1M', '66');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('27', '2700', '2Q', '65');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('28', '2800', '2W', '64');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('29', '2900', '2E', '63');
+
+INSERT INTO `sql2`.`instrument_rating` (`InstrumentRatingID`, `ReportingContextID`, `InstrumentID`, `RatingID`) VALUES ('30', '3000', '2R', '62');
