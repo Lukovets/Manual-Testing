@@ -1,0 +1,5 @@
+CREATE TABLE `sql2`.`project` (
+`projectId` INT NOT NULL AUTO_INCREMENT,
+`p_id` INT NULL,
+`name` VARCHAR(45) NULL,
+PRIMARY KEY (`projectId`));
