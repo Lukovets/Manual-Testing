@@ -1,0 +1,9 @@
+CREATE TABLE `sql2`.`rating_agency` (
+  
+`RatingAgencyID` INT NOT NULL,
+  
+`ReportingContextID` INT NOT NULL,
+  
+`RatingAgencyName` VARCHAR(50) NULL,
+  
+PRIMARY KEY (`RatingAgencyID`, `ReportingContextID`));
