@@ -1,0 +1,6 @@
+select distinct sql2.services.ClientId
+from sql2.services
+where sql2.services.RegionId like
+(select sql2.services.RegionId
+from sql2.services
+having count(*)>=1)
