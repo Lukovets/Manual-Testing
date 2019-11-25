@@ -1,0 +1,11 @@
+select distinct sql2.instrument.InstrumentCode, sql2.rating.RatingValue, sql2.rating_agency.RatingAgencyName, sql2.rating_type.RatingTypeCode
+from sql2.instrument
+join sql2.instrument_rating
+on sql2.instrument.InstrumentID = sql2.instrument_rating.InstrumentID
+join sql2.rating
+on sql2.instrument_rating.RatingID = sql2.rating.RatingID
+join sql2.rating_agency
+on sql2.rating.RatingAgencyID = sql2.rating_agency.RatingAgencyID
+join sql2.rating_type
+on sql2.rating.RatingTypeID = sql2.rating_type.RatingTypeID
+where sql2.instrument.InstrumentCode in ('101929023','103530745','106662608','107783527','111674711','114313533')

@@ -1,0 +1,6 @@
+SELECT sql.people_info.Name, sql.people_info.Surname, sql.country_info.City_Name, sql.people_info.IsOccupaied
+FROM sql.people_info
+JOIN sql.country_info
+ON sql.people_info.City_ID = sql.country_info.City_ID
+WHERE sql.country_info.City_ID <= 2
+AND sql.people_info.IsOccupaied = 0

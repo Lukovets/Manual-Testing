@@ -1,0 +1,7 @@
+CREATE TABLE `sql2`.`services` (
+`Id` INT NOT NULL AUTO_INCREMENT,
+`ClientId` INT NULL,
+`ServiceId` INT NULL,
+`Date` DATE NULL,
+`RegionId` INT NULL,
+PRIMARY KEY (`Id`));

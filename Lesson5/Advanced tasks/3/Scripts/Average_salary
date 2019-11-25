@@ -1,0 +1,7 @@
+select distinct sql2.project.*
+from sql2.project 
+join sql2.assign
+on sql2.project.p_id = sql2.assign.p_id
+join sql2.empl
+on sql2.assign.e_id = sql2.empl.e_id
+where (select avg(sql2.empl.salary)<1000) 

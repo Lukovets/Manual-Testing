@@ -1,0 +1,6 @@
+select sql2.customers.Name, sql2.orders.OrderID, sql2.country.Name
+from sql2.customers
+join sql2.orders
+on sql2.customers.CustomerID = sql2.orders.CustomerID
+join sql2.country
+on sql2.customers.CountryID = sql2.country.ID

@@ -1,0 +1,13 @@
+CREATE TABLE `sql`.`country_info` (
+  
+`City_Id` INT NOT NULL,
+  
+`Country_Name` VARCHAR(50) NULL,
+  
+`City_Name` VARCHAR(50) NULL,
+  
+`Population` INT NULL,
+  
+`Is_Capital` BIT(1) NULL,
+  
+PRIMARY KEY (`City_Id`));

@@ -1,0 +1,7 @@
+select count(sql.people_info.IsOccupaied) 
+from sql.people_info
+join sql.country_info
+on sql.people_info.City_ID = sql.country_info.City_ID
+where sql.country_info.Population between 10000 and 50000
+or sql.country_info.Population between 500000 and 1000000
+and sql.people_info.IsOccupaied = 1

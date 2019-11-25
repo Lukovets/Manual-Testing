@@ -1,0 +1,5 @@
+select sql2.project.projectId, sql2.project.p_id, sql2.project.name
+from sql2.project
+join sql2.assign 
+on sql2.project.p_id = sql2.assign.p_id
+where sql2.assign.e_id >2

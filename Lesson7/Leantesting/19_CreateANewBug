@@ -1,0 +1,43 @@
+package com.example.tests;
+
+import com.thoughtworks.selenium.Selenium;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.regex.Pattern;
+import static org.apache.commons.lang3.StringUtils.join;
+
+public class CreateANewBug {
+	private Selenium selenium;
+
+	@Before
+	public void setUp() throws Exception {
+		WebDriver driver = new FirefoxDriver();
+		String baseUrl = "https://www.katalon.com/";
+		selenium = new WebDriverBackedSelenium(driver, baseUrl);
+	}
+
+	@Test
+	public void testCreateANewBug() throws Exception {
+		selenium.open("https://dashboard.leantesting.com/en/projects/test/38280/bug-tracker#");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Filtering'])[1]/preceding::span[1]");
+		selenium.click("id=ReportBugFormModal_title");
+		String New bug = selenium.getValue("id=ReportBugFormModal_title");
+		selenium.click("id=ReportBugFormModal_bug_priority_id");
+		selenium.select("id=ReportBugFormModal_bug_priority_id", "label=Low");
+		selenium.click("id=ReportBugFormModal_bug_priority_id");
+		selenium.click("id=ReportBugFormModal_severity");
+		selenium.select("id=ReportBugFormModal_severity", "label=Trivial");
+		selenium.click("id=ReportBugFormModal_severity");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/following::button[1]");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		selenium.stop();
+	}
+}

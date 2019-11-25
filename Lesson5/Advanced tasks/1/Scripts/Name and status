@@ -1,0 +1,4 @@
+select sql2.customers.Name, sql2.orders.Status
+from sql2.customers
+join sql2.orders
+on sql2.customers.CustomerID = sql2.orders.CustomerID

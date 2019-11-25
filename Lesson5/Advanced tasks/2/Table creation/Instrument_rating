@@ -1,0 +1,11 @@
+CREATE TABLE `sql2`.`instrument_rating` (
+  
+`InstrumentRatingID` INT NOT NULL,
+  
+`ReportingContextID` INT NOT NULL,
+  
+`InstrumentID` VARCHAR(45) NULL,
+  
+`RatingID` INT NULL,
+  
+PRIMARY KEY (`InstrumentRatingID`, `ReportingContextID`));

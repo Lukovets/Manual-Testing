@@ -1,0 +1,68 @@
+1)
+
+select sql.emp_a.EMPID as Top3rdEmployee, sql.emp_a.EMPNAME
+from sql.emp_a
+order by sql.emp_a.EMPID 
+limit 1
+offset 2
+
+
+2)
+
+select max(sql.emp_a.SALARY) as 2nd_max_Salary, sql.emp_a.EMPNAME
+from sql.emp_a
+where sql.emp_a.SALARY < 
+(select max(sql.emp_a.SALARY)
+from sql.emp_a)
+
+2-2)
+
+select max(sql.emp_a.SALARY) as 2nd_max_Salary, sql.emp_a.EMPNAME
+from sql.emp_a
+where sql.emp_a.SALARY not in 
+(select max(sql.emp_a.SALARY) from sql.emp_a)
+
+
+3)
+
+select sql.emp_a.EMPNAME, sql.emp_a.DOB, sql.dept_b.DEPTNAME
+from sql.emp_a 
+join sql.dept_b 
+on sql.emp_a.DEPTID = sql.dept_b.DEPTID
+where sql.dept_b.DEPTNAME like '%QA%'
+order by sql.emp_a.EMPNAME asc
+
+4)
+
+select sql.emp_a.EMPNAME, sql.emp_a.DOB, sql.dept_b.DEPTNAME
+from sql.emp_a 
+join sql.dept_b 
+on sql.emp_a.DEPTID = sql.dept_b.DEPTID
+order by sql.emp_a.DOB desc
+
+5)
+
+select count(sql.emp_a.EMPID), sql.dept_b.DEPTNAME
+from sql.dept_b
+left outer join sql.emp_a
+on sql.emp_a.DEPTID = sql.dept_b.DEPTID
+group by sql.dept_b.DEPTID
+
+6)
+
+select sql.emp_a.EMPNAME, sql.emp_a.MGRID, sql.dept_b.DEPTNAME
+from sql.emp_a
+join sql.dept_b
+on sql.emp_a.DEPTID = sql.dept_b.DEPTID
+
+7)
+
+select sql.emp_a.EMPID, sql.emp_a.EMPNAME, sql.dept_b.DEPTNAME
+from sql.emp_a
+join sql.dept_b
+on sql.emp_a.DEPTID = sql.dept_b.DEPTID
+where sql.emp_a.DEPTID in (
+select sql.emp_a.DEPTID
+from sql.emp_a
+group by sql.emp_a.DEPTID
+having count(*)>1)

@@ -1,0 +1,53 @@
+package com.example.tests;
+
+import com.thoughtworks.selenium.Selenium;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.regex.Pattern;
+import static org.apache.commons.lang3.StringUtils.join;
+
+public class WorkWithTheExistingProject {
+	private Selenium selenium;
+
+	@Before
+	public void setUp() throws Exception {
+		WebDriver driver = new FirefoxDriver();
+		String baseUrl = "https://www.katalon.com/";
+		selenium = new WebDriverBackedSelenium(driver, baseUrl);
+	}
+
+	@Test
+	public void testWorkWithTheExistingProject() throws Exception {
+		selenium.open("https://dashboard.leantesting.com/en");
+		selenium.click("link=ListBoxer");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Overview'])[3]/following::div[1]");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='#'])[3]/following::div[1]");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description:'])[1]/following::p[1]");
+		selenium.click("id=ReportBugForm_description");
+		selenium.click("id=ReportBugForm_version_id");
+		selenium.click("id=ReportBugForm_bug_types_id");
+		selenium.click("id=ReportBugForm_bug_types_id");
+		selenium.click("id=ReportBugForm_severity");
+		selenium.select("id=ReportBugForm_severity", "label=Major");
+		selenium.click("id=ReportBugForm_severity");
+		selenium.select("id=ReportBugForm_severity", "label=Minor");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Status:'])[1]/following::select[1]");
+		selenium.select("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Status:'])[1]/following::select[1]", "label=Confirmed");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Status:'])[1]/following::select[1]");
+		selenium.select("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Status:'])[1]/following::select[1]", "label=New");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Priority:'])[1]/following::select[1]");
+		selenium.select("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Priority:'])[1]/following::select[1]", "label=High");
+		selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Priority:'])[1]/following::select[1]");
+		selenium.select("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Priority:'])[1]/following::select[1]", "label=Medium");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		selenium.stop();
+	}
+}

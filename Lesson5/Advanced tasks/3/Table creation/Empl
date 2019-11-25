@@ -1,0 +1,7 @@
+CREATE TABLE `sql2`.`empl` (
+`emplId` INT NOT NULL AUTO_INCREMENT,
+`e_id` INT NULL,
+`name` VARCHAR(45) NULL,
+`salary` INT NULL,
+PRIMARY KEY (`emplId`));
+

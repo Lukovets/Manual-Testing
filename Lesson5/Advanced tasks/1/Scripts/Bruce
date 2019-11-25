@@ -1,0 +1,3 @@
+select sql2.customers.Name
+from sql2.customers
+where sql2.customers.Name like 'Bruce%'
